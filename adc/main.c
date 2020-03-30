@@ -25,7 +25,7 @@ int main(void)
 	while (1)
 	{
 		uint16_t adc_value = ADC_Read(0)*0.4882;
-		char val[1];
+		char val[4];
 		itoa(adc_value,val,10);
 		UART_TxString(val);
 		UART_TxString("\r\n");
